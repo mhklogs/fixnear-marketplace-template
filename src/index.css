@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+:root {
+  --color-forest: #0F1411;
+  --color-sage: #1D2420;
+  --color-glass-border: rgba(255, 255, 255, 0.05);
+  --color-glass-bg: rgba(29, 36, 32, 0.72);
+  --color-ink: #EDEFEA;
+  --color-ink-muted: #9AA79C;
+  --color-scrollbar-thumb: rgba(255, 255, 255, 0.14);
+  --shadow-glass: 0 24px 60px -28px rgba(0, 0, 0, 0.8);
+}
+
+html.light {
+  --color-forest: #F4F3EF;          /* Light warm background */
+  --color-sage: #E5E8E2;            /* Soft light-sage card background */
+  --color-glass-border: rgba(15, 20, 17, 0.08);
+  --color-glass-bg: rgba(229, 232, 226, 0.75);
+  --color-ink: #0F1411;             /* Dark text color */
+  --color-ink-muted: #2E3A31;             /* Darker, prominent muted text color */
+  --color-scrollbar-thumb: rgba(15, 20, 17, 0.15);
+  --shadow-glass: 0 24px 60px -28px rgba(15, 20, 17, 0.08);
+}
+
+/* Light theme overrides for Tailwind opacity/border utilities */
+html.light .bg-white\/5 {
+  background-color: rgba(15, 20, 17, 0.04) !important;
+}
+html.light .bg-white\/10 {
+  background-color: rgba(15, 20, 17, 0.08) !important;
+}
+html.light .border-white\/5 {
+  border-color: rgba(15, 20, 17, 0.06) !important;
+}
+html.light .border-white\/10 {
+  border-color: rgba(15, 20, 17, 0.1) !important;
+}
+html.light .border-white\/15 {
+  border-color: rgba(15, 20, 17, 0.15) !important;
+}
+html.light .border-white\/20 {
+  border-color: rgba(15, 20, 17, 0.2) !important;
+}
+html.light .divide-white\/10 > * + * {
+  border-color: rgba(15, 20, 17, 0.1) !important;
+}
+html.light .text-alabaster {
+  color: #0F1411 !important;
+}
+html.light .text-alabaster\/60 {
+  color: rgba(15, 20, 17, 0.6) !important;
+}
+html.light .text-alabaster\/70 {
+  color: rgba(15, 20, 17, 0.7) !important;
+}
+html.light .text-alabaster\/80 {
+  color: rgba(15, 20, 17, 0.8) !important;
+}
+html.light .text-alabaster\/90 {
+  color: rgba(15, 20, 17, 0.9) !important;
+}
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-alabaster: #F4F3EF;
+  --color-charcoal: #2B2E33;
+  --color-terracotta: #5E7D2A;
+  --color-primary-text: #333333;
+  --color-muted-text: #8A8985;
+  --color-terra: #5E7D2A;
+  --color-offwhite: #F4F3EF;
+  --color-warmgray: #8A8985;
+
+  /* Deep Forest Charcoal luxury theme - variable mapped */
+  --color-forest: var(--color-forest);
+  --color-sage: var(--color-sage);
+  --color-glass-border: var(--color-glass-border);
+  --color-ink: var(--color-ink);
+  --color-ink-muted: var(--color-ink-muted);
+  --color-brass: #D9A05B;
+  --color-brass-soft: rgba(217, 160, 91, 0.16);
+
+  /* Soft design language radii */
+  --radius-soft: 20px;
+  --radius-card: 32px;
+  --radius-pill: 100px;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--color-forest);
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--color-forest);
+  overflow-x: hidden;
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Floating island offset so anchored sections clear the fixed nav */
+section[id] {
+  scroll-margin-top: 120px;
+}
+
+/* Brand wordmark typography */
+.brand-mark {
+  font-family: var(--font-display);
+  letter-spacing: -0.06em;
+  font-weight: 400;
+}
+.brand-mark .brand-close {
+  font-weight: 800;
+  color: #D9A05B;
+}
+
+/* Custom scrollbar to keep layout premium */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0F1411;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.14);
+  border-radius: 100px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D9A05B;
+}
+
+/* Hide scrollbar on image slider components */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ============================================================
+   Deep Forest Charcoal luxury theme utilities (non-hero sections)
+   ============================================================ */
+
+/* Soft Sage Glass surface — #1D2420, high blur, subtle border-white/5 */
+.glass {
+  background: var(--color-glass-bg);
+  backdrop-filter: blur(26px) saturate(140%);
+  -webkit-backdrop-filter: blur(26px) saturate(140%);
+  border: 1px solid var(--color-glass-border);
+  box-shadow:
+    var(--shadow-glass),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+/* Slow-drifting organic light gradient backdrop */
+.organic-glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(110px);
+  opacity: 0.45;
+  pointer-events: none;
+  will-change: transform, opacity;
+  animation: organicDrift 26s ease-in-out infinite alternate;
+}
+@keyframes organicDrift {
+  0%   { transform: translate3d(-8%, -6%, 0) scale(1) rotate(0deg);     opacity: 0.3; }
+  33%  { transform: translate3d(6%, 4%, 0)  scale(1.18) rotate(40deg);  opacity: 0.5; }
+  66%  { transform: translate3d(-4%, 8%, 0) scale(0.92) rotate(-30deg); opacity: 0.38; }
+  100% { transform: translate3d(10%, -4%, 0) scale(1.1) rotate(20deg);  opacity: 0.52; }
+}
+
+/* 3D tilt wrapper — JS sets --rx/--ry/--mx/--my inline */
+.tilt-3d {
+  transform: perspective(900px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg));
+  transition: transform 0.18s ease-out;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+.tilt-3d .tilt-glint {
+  background: radial-gradient(
+    420px circle at var(--mx, 50%) var(--my, 50%),
+    rgba(255, 255, 255, 0.10),
+    transparent 45%
+  );
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+.tilt-3d:hover .tilt-glint {
+  opacity: 1;
+}
+
+/* Brushed Brass active CTA */
+.btn-brass {
+  background: linear-gradient(135deg, #E2B06E, #D9A05B 55%, #C28C44);
+  color: #1A1206;
+  box-shadow:
+    0 12px 34px -10px rgba(217, 160, 91, 0.6),
+    0 0 0 1px rgba(217, 160, 91, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.45);
+  transition: transform 0.2s ease, box-shadow 0.3s ease, filter 0.2s ease;
+}
+.btn-brass:hover {
+  box-shadow:
+    0 16px 44px -10px rgba(217, 160, 91, 0.8),
+    0 0 24px rgba(217, 160, 91, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+.btn-amber:active {
+  transform: scale(0.97);
+}
+
+/* Warm Amber -> Copper cinematic CTA (primary conversion buttons) */
+.btn-amber {
+  background: linear-gradient(135deg, #F59E0B, #EA580C 60%);
+  color: #fff;
+  box-shadow:
+    0 12px 34px -10px rgba(234, 88, 12, 0.6),
+    0 0 0 1px rgba(234, 88, 12, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.35);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.2s ease;
+}
+.btn-amber:hover {
+  transform: scale(1.05);
+  box-shadow:
+    0 18px 46px -10px rgba(234, 88, 12, 0.85),
+    0 0 26px rgba(249, 158, 11, 0.55),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+.btn-amber:active {
+  transform: scale(0.97);
+}
+
+/* Scroll-driven parallax wrapper */
+.parallax {
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .organic-glow { animation: none; }
+  .tilt-3d { transition: none; }
+}
