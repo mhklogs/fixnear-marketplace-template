@@ -16,7 +16,7 @@ export default function WhyUs() {
       id: 'phone-routing',
       title: 'Verified Warm Phone Routing',
       subtitle: 'Double-OTP verification and automated live HLR checks.',
-      details: 'Never purchase fake numbers or disconnected emails. Every contact entering ReferralClose passes through active carrier validation (HLR lookup) and receives an instantaneous SMS-OTP code. Contractors receive verified direct-dial lines only.'
+      details: 'Never purchase fake numbers or disconnected emails. Every contact entering FixNear passes through active carrier validation (HLR lookup) and receives an instantaneous SMS-OTP code. Contractors receive verified direct-dial lines only.'
     },
     {
       id: 'zero-retainers',
@@ -120,7 +120,7 @@ export default function WhyUs() {
 
             <div className="flex items-center space-x-2 text-terracotta mb-6">
               <Sparkles className="w-4 h-4" />
-              <span className="font-mono text-xs tracking-wider uppercase">ReferralClose vs. Competitors</span>
+              <span className="font-mono text-xs tracking-wider uppercase">FixNear vs. Competitors</span>
             </div>
 
             <h3 className="text-xl font-display font-bold text-alabaster uppercase tracking-wide mb-6">
@@ -134,7 +134,7 @@ export default function WhyUs() {
               <div className="grid grid-cols-12 pb-3 border-b border-white/10 text-alabaster/40 uppercase tracking-widest text-[10px]">
                 <div className="col-span-5">Core Parameter</div>
                 <div className="col-span-3 text-center">Typical Agencies</div>
-                <div className="col-span-4 text-right text-terracotta">ReferralClose</div>
+                <div className="col-span-4 text-right text-terracotta">FixNear</div>
               </div>
 
               {/* Row 1 */}

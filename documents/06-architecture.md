@@ -1,4 +1,4 @@
-# referralclose-llc-marketplace — Architecture Summary
+# fixnear-marketplace-template — Architecture Summary
 
 > Generated from static analysis on 2026-09-28.
 

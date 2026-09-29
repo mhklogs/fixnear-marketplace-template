@@ -1,4 +1,4 @@
-# referralclose-llc-marketplace — Functional Requirements
+# fixnear-marketplace-template — Functional Requirements
 
 > Derived from static analysis of the source tree on 2026-09-28. Each requirement cites
 > the file that evidences it, so any claim can be checked. Requirements marked

@@ -7,7 +7,7 @@ const METROS = [
 ];
 
 // Reviews are written from the client's perspective (homeowners + commercial
-// accounts such as schools and hospitals), since ReferralClose serves customers.
+// accounts such as schools and hospitals), since FixNear serves customers.
 const RAW: Array<[number, number, string, string, string, 'Homeowner' | 'Commercial']> = [
   [1, 5, 'Marcus T.', 'Homeowner · HVAC', 'The AC died in July and I was matched with a certified tech the same afternoon. Fixed in two hours — no cold-calling a single company.', 'Homeowner'],
   [2, 5, 'Sarah K.', 'Homeowner · Painting', 'I requested a few quotes and got one verified painter with great reviews. My living room looks brand new.', 'Homeowner'],
@@ -16,7 +16,7 @@ const RAW: Array<[number, number, string, string, string, 'Homeowner' | 'Commerc
   [5, 5, 'Hector V.', 'Homeowner · Bathroom', 'Two bathroom-remodel quotes, both solid. Picked one and the work was done on time and on budget.', 'Homeowner'],
   [6, 4, 'Brenda S.', 'Homeowner · Landscaping', 'Our yard was a mess. The landscaper they sent designed a low-maintenance garden we actually love.', 'Homeowner'],
   [7, 5, 'Christian B.', 'Homeowner · Roofing', 'Finally a service that didn’t spam me with ten contractors. One verified pro, great roof.', 'Homeowner'],
-  [8, 5, 'Rachel W.', 'Homeowner · Flooring', 'ReferralClose matched me with a flooring crew who installed engineered hardwood in a weekend. Flawless.', 'Homeowner'],
+  [8, 5, 'Rachel W.', 'Homeowner · Flooring', 'FixNear matched me with a flooring crew who installed engineered hardwood in a weekend. Flawless.', 'Homeowner'],
   [9, 4, 'Derek H.', 'Homeowner · Electrical', 'Needed panel upgrades and got a licensed electrician quickly. Easy to schedule around my work.', 'Homeowner'],
   [10, 5, 'Frank T.', 'Homeowner · Siding', 'New siding looks fantastic and the crew respected our property. Highly recommend.', 'Homeowner'],
   [11, 3, 'Robert G.', 'Homeowner · Windows', 'Good experience overall, though the first pro was booked solid. The second was great.', 'Homeowner'],
@@ -30,10 +30,10 @@ const RAW: Array<[number, number, string, string, string, 'Homeowner' | 'Commerc
   [19, 5, 'Luis M.', 'Homeowner · Masonry', 'Retaining wall built beautifully. The questionnaire meant no surprises.', 'Homeowner'],
   [20, 4, 'Ken J.', 'Homeowner · Carpentry', 'Trim and built-ins done right. Easy process from request to finish.', 'Homeowner'],
   [21, 5, 'Paul A.', 'Homeowner · Electrical', 'Got an EV charger installed by a certified pro. Clean work.', 'Homeowner'],
-  [22, 5, 'Danny F.', 'Homeowner · Remodel', 'First-time homeowner and nervous. ReferralClose made it simple and safe.', 'Homeowner'],
+  [22, 5, 'Danny F.', 'Homeowner · Remodel', 'First-time homeowner and nervous. FixNear made it simple and safe.', 'Homeowner'],
 
   // Commercial / institutional accounts
-  [23, 5, 'Facilities Team', 'Lincoln Elementary School', 'We needed HVAC servicing across 30 classrooms. ReferralClose matched us with a verified commercial contractor who handled the whole campus — teachers and kids stayed comfortable.', 'Commercial'],
+  [23, 5, 'Facilities Team', 'Lincoln Elementary School', 'We needed HVAC servicing across 30 classrooms. FixNear matched us with a verified commercial contractor who handled the whole campus — teachers and kids stayed comfortable.', 'Commercial'],
   [24, 5, 'Operations', 'St. Mary Regional Hospital', 'Critical cooling went down in a patient wing. Got an emergency commercial tech within the hour — life-safety preserved.', 'Commercial'],
   [25, 4, 'Facilities', 'Riverside High School', 'Gym floor refinishing done over a holiday break by a vetted crew. Safe, on schedule, great finish.', 'Commercial'],
   [26, 5, 'Property Mgmt', 'Maple Court Apartments', 'Multi-unit repipe coordinated smoothly. One verified vendor, transparent pricing across all units.', 'Commercial'],

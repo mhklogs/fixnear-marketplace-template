@@ -1,6 +1,8 @@
 {
-  "name": "ReferralClose Home Service Marketplace",
-  "description": "Connecting precision craftsmanship with discerning homeowners through a highly curated directory of elite home improvement professionals.",
+  "name": "FixNear Home Services Directory",
+  "description": "Production-ready home-services marketplace template \u2014 curated contractor directory, lead pipeline, AI chat with knowledge base, reviews and booking flows.",
   "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }

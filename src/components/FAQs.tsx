@@ -27,9 +27,9 @@ const FAQS: Faq[] = [
     id: 2,
     question: 'Is it really free for homeowners?',
     answer:
-      'Yes. Requesting a verified pro costs you $0. No monthly fees, no retainers. The local pro who receives your request pays ReferralClose a small commission, so we only win when we match you well.',
+      'Yes. Requesting a verified pro costs you $0. No monthly fees, no retainers. The local pro who receives your request pays FixNear a small commission, so we only win when we match you well.',
     sub: [
-      'How does ReferralClose make money then?',
+      'How does FixNear make money then?',
       'Will the pro charge me extra to cover the fee?',
       'Are there any hidden costs?',
     ],
@@ -83,7 +83,7 @@ const FAQS: Faq[] = [
   {
     id: 8,
     question: 'How are quotes priced?',
-    answer: 'Pros quote per project after seeing your details; ReferralClose charges a flat per-lead commission to the pro, not a markup to you.',
+    answer: 'Pros quote per project after seeing your details; FixNear charges a flat per-lead commission to the pro, not a markup to you.',
   },
   {
     id: 9,
@@ -137,7 +137,7 @@ export default function FAQs() {
       const reply = await sendChat([
         {
           role: 'user',
-          content: `You are the ReferralClose homeowner FAQ assistant. Answer concisely (under 60 words), friendly, homeowner-focused: ${q}`,
+          content: `You are the FixNear homeowner FAQ assistant. Answer concisely (under 60 words), friendly, homeowner-focused: ${q}`,
         },
       ]);
       setQuery({ q, a: reply });

@@ -17,13 +17,13 @@ export default function AboutUs() {
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <Parallax distance={40} className="max-w-3xl mb-14">
           <span className="font-mono text-xs tracking-widest text-brass uppercase block mb-3">
-            // ABOUT REFERRALCLOSE
+            // ABOUT FIXNEAR
           </span>
           <h2 className="text-4xl sm:text-6xl font-display font-bold uppercase tracking-tight text-ink">
             A Houston Team Connecting You To Local Pros
           </h2>
           <p className="text-ink-muted font-light mt-5 text-base sm:text-lg leading-relaxed max-w-2xl">
-            ReferralClose is based in <strong className="text-ink">Houston, Texas</strong>, and runs a verified network of home-service pros across the entire United States. When you request a service, we send it straight to a pro who works in your postal code — they handle the job, and we take a small commission on the match. No fees to you, ever.
+            FixNear is based in <strong className="text-ink">Houston, Texas</strong>, and runs a verified network of home-service pros across the entire United States. When you request a service, we send it straight to a pro who works in your postal code — they handle the job, and we take a small commission on the match. No fees to you, ever.
           </p>
         </Parallax>
 

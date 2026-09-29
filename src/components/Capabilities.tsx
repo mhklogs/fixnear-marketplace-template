@@ -125,7 +125,7 @@ export default function Capabilities() {
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <Parallax distance={40} className="max-w-3xl mb-16">
           <span className="font-mono text-xs tracking-widest text-brass uppercase block mb-3">
-            // HOW REFERRALCLOSE WORKS FOR HOMEOWNERS
+            // HOW FIXNEAR WORKS FOR HOMEOWNERS
           </span>
           <h2 className="text-5xl sm:text-7xl font-display font-bold uppercase tracking-tight text-ink">
             How We Match You With Verified Pros

@@ -1,4 +1,4 @@
-# referralclose-llc-marketplace — Non-Functional Requirements
+# fixnear-marketplace-template — Non-Functional Requirements
 
 > **Important.** Performance, availability and security targets below are
 > **placeholders**, not measurements. No load test, profiling run, or audit was

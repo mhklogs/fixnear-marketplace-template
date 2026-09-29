@@ -62,13 +62,13 @@ export default function ConnectPipeline() {
 
             <div className="space-y-4">
               <a
-                href="mailto:hello@referralclose.com"
+                href="mailto:hello@fixnear-marketplace.com"
                 className="flex items-center gap-4 bg-white/5 border border-white/5 rounded-[20px] p-5 hover:border-brass transition-colors"
               >
                 <Mail className="w-5 h-5 text-brass" />
                 <div>
                   <div className="font-mono text-[10px] uppercase tracking-widest text-ink-muted/70">Email</div>
-                  <div className="text-ink font-medium">hello@referralclose.com</div>
+                  <div className="text-ink font-medium">hello@fixnear-marketplace.com</div>
                 </div>
               </a>
               <a

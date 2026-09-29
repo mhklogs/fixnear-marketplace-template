@@ -14,7 +14,7 @@ const MODEL = process.env.GEMINI_MODEL || 'gemini-2.0-flash';
 const app = express();
 app.use(express.json());
 
-const SYSTEM_PROMPT = `You are ReferralClose Assistant, the friendly AI guide for ReferralClose.com — a premium home-service marketplace that connects verified local contractors (roofing, HVAC, plumbing, electrical, solar, remodeling, painting, landscaping, masonry, windows, flooring, decks, siding, garage, pest control, security) with high-intent homeowners.
+const SYSTEM_PROMPT = `You are FixNear Assistant, the friendly AI guide for FixNear.com — a premium FixNear that connects verified local contractors (roofing, HVAC, plumbing, electrical, solar, remodeling, painting, landscaping, masonry, windows, flooring, decks, siding, garage, pest control, security) with high-intent homeowners.
 
 Your job:
 - Help homeowners pick the right trade and start a "Book Consultation" (tap any trade card or the Book Consultation buttons).
@@ -60,7 +60,7 @@ app.post('/api/chat', async (req, res) => {
   if (!ai) {
     return res.status(200).json({
       reply:
-        "I'm your ReferralClose guide. Tap any trade in the Marketplace or hit “Book Consultation” and I'll walk you through it. (Note: the AI backend key isn't configured right now.)",
+        "I'm your FixNear guide. Tap any trade in the Marketplace or hit “Book Consultation” and I'll walk you through it. (Note: the AI backend key isn't configured right now.)",
     });
   }
 

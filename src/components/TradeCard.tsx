@@ -117,7 +117,7 @@ export default function TradeCard({ trade, onClaimLeads }: TradeCardProps) {
                 ))}
               </div>
               <p className="text-[10px] text-warmgray leading-relaxed italic mt-2">
-                * Note: Dispatches on ReferralClose are 100% phone OTP-verified before dispatching to your dashboard.
+                * Note: Dispatches on FixNear are 100% phone OTP-verified before dispatching to your dashboard.
               </p>
             </motion.div>
           )}

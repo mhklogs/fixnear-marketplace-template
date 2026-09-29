@@ -11,7 +11,7 @@ interface ChatWidgetProps {
 const GREETING: ChatMessage = {
   role: 'assistant',
   content:
-    "Hi, I'm the ReferralClose Assistant. I can help you pick the right home service, explain how it works, or start your “Book Consultation” — a verified local pro for your trade who serves your ZIP. What are you working on?",
+    "Hi, I'm the FixNear Assistant. I can help you pick the right home service, explain how it works, or start your “Book Consultation” — a verified local pro for your trade who serves your ZIP. What are you working on?",
 };
 
 const QUICK_PROMPTS = [
@@ -84,7 +84,7 @@ export default function ChatWidget({ onRequestPro }: ChatWidgetProps) {
               <Bot className="w-4 h-4" />
             </span>
             <div className="leading-tight">
-              <div className="text-alabaster font-semibold text-sm">ReferralClose Assistant</div>
+              <div className="text-alabaster font-semibold text-sm">FixNear Assistant</div>
               <div className="text-[10px] font-mono text-ink-muted uppercase tracking-widest">AI Guide · Online</div>
             </div>
           </div>

@@ -65,7 +65,7 @@ export default function App() {
               <div className="font-mono text-[10px] uppercase tracking-widest text-brass mb-4">Company</div>
               <ul className="space-y-2.5 text-sm text-ink-muted">
                 <li><a href="#about" className="hover:text-brass transition-colors">About Us</a></li>
-                <li><a href="mailto:hello@referralclose.com" className="hover:text-brass transition-colors">Contact</a></li>
+                <li><a href="mailto:hello@fixnear-marketplace.com" className="hover:text-brass transition-colors">Contact</a></li>
                 <li><a href="tel:1-800-REF-CLOS" className="hover:text-brass transition-colors">1-800-REF-CLOS</a></li>
               </ul>
             </div>
@@ -73,7 +73,7 @@ export default function App() {
 
           <div className="mt-12 pt-6 border-t border-white/5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
             <div className="text-[10px] font-mono text-ink-muted/60">
-              © {new Date().getFullYear()} ReferralClose.com. All Rights Reserved.
+              © {new Date().getFullYear()} FixNear.com. All Rights Reserved.
             </div>
             <div className="text-[10px] font-mono text-ink-muted/60">
               Houston, Texas · Matching verified pros across the U.S.

@@ -10,16 +10,16 @@ const POSTS = [
     tag: 'Deep Dive 01',
     icon: Network,
     title: 'The Cost of Delayed Home Repairs',
-    body: 'A tiny structural crack, a slow HVAC leak, or a flickering breaker might seem minor, but deferred maintenance is the fastest way to compound your repair bills. Studies show that homeowners who address minor issues immediately save up to 70% in long-term emergency restoration costs. ReferralClose bypasses the friction of finding help. Our platform secures a local, ready-to-deploy specialist the moment a problem arises—protecting your home and your budget before a minor issue becomes a major crisis.',
-    takeaway: 'ReferralClose Homeowner Protection Brief',
+    body: 'A tiny structural crack, a slow HVAC leak, or a flickering breaker might seem minor, but deferred maintenance is the fastest way to compound your repair bills. Studies show that homeowners who address minor issues immediately save up to 70% in long-term emergency restoration costs. FixNear bypasses the friction of finding help. Our platform secures a local, ready-to-deploy specialist the moment a problem arises—protecting your home and your budget before a minor issue becomes a major crisis.',
+    takeaway: 'FixNear Homeowner Protection Brief',
   },
   {
     id: 2,
     tag: 'Deep Dive 02',
     icon: PiggyBank,
     title: 'The Zero-Spam Match Guarantee',
-    body: 'Traditional home-service directories operate on a chaotic bidding model: you submit your phone number, and they sell it to five or ten aggressive contractors who bomb your phone with sales calls for weeks. We believe your privacy is non-negotiable. The ReferralClose architecture works on a strict, single-match philosophy. We analyze your location and trade needs, match you with the single best-qualified local professional for your project, and lock the pipeline. No endless cold calls, no shared contact sheets—just one trusted expert, direct to your door.',
-    takeaway: 'ReferralClose Security & Peace of Mind Brief',
+    body: 'Traditional home-service directories operate on a chaotic bidding model: you submit your phone number, and they sell it to five or ten aggressive contractors who bomb your phone with sales calls for weeks. We believe your privacy is non-negotiable. The FixNear architecture works on a strict, single-match philosophy. We analyze your location and trade needs, match you with the single best-qualified local professional for your project, and lock the pipeline. No endless cold calls, no shared contact sheets—just one trusted expert, direct to your door.',
+    takeaway: 'FixNear Security & Peace of Mind Brief',
   },
 ];
 
@@ -74,7 +74,7 @@ export default function KnowledgeHub() {
                       <div className="overflow-hidden">
                         <div className="bg-white/5 border border-white/5 rounded-[20px] p-4">
                           <span className="font-mono text-[10px] uppercase tracking-widest text-brass">Why it matters for you</span>
-                          <p className="text-sm text-ink mt-1 font-medium">When you book through ReferralClose, a single vetted local pro is matched to your home — fast, private, and free to request.</p>
+                          <p className="text-sm text-ink mt-1 font-medium">When you book through FixNear, a single vetted local pro is matched to your home — fast, private, and free to request.</p>
                         </div>
                       </div>
                     </div>

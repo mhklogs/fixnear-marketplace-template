@@ -1,5 +1,5 @@
 
-# referralclose-llc-marketplace — Data Flow Diagram
+# fixnear-marketplace-template — Data Flow Diagram
 
 > Generated from static analysis on 2026-09-28. The diagram shows processes and
 > stores that were **positively detected**. Dashed nodes are inferred from a
@@ -9,7 +9,7 @@
 
 ```mermaid
 flowchart LR
-    U["External user<br/>(browser / client)"] -->|"requests"| S["referralclose-llc-marketplace"]
+    U["External user<br/>(browser / client)"] -->|"requests"| S["fixnear-marketplace-template"]
     S -->|"responses"| U
     S -->|"outbound calls"| X["Third-party services"]
 ```
@@ -20,7 +20,7 @@ flowchart LR
 flowchart TD
     U["External user"] --> P1
 
-    subgraph APP ["referralclose-llc-marketplace"]
+    subgraph APP ["fixnear-marketplace-template"]
         P1["Presentation layer<br/>0 route module(s), 27 component(s)"]
         P2["Application / API layer<br/>0 handler(s)"]
         P3["Domain logic<br/>business rules"]

@@ -122,7 +122,7 @@ export default function LeadWizard({ onClose, onLeadSubmitted }: LeadWizardProps
       case '7': return 'Austin, TX';
       case '8': return 'Denver, CO';
       case '9': return 'Seattle, WA';
-      default: return 'Active ReferralClose Network';
+      default: return 'Active FixNear Network';
     }
   };
 
@@ -142,7 +142,7 @@ export default function LeadWizard({ onClose, onLeadSubmitted }: LeadWizardProps
               <div>
                 <p className="font-bold text-xs uppercase tracking-wider text-white/80">Automated OTP Verification SMS</p>
                 <p className="text-sm font-semibold mt-1">
-                  ReferralClose: Your verification code is <span className="font-mono text-lg tracking-wider underline font-extrabold text-white">{generatedOtp}</span>.
+                  FixNear: Your verification code is <span className="font-mono text-lg tracking-wider underline font-extrabold text-white">{generatedOtp}</span>.
                 </p>
                 <p className="text-[10px] text-white/70 mt-1">This simulates our instant automated voice & text verification service.</p>
               </div>
@@ -411,7 +411,7 @@ export default function LeadWizard({ onClose, onLeadSubmitted }: LeadWizardProps
                         Connect with the local dispatch team
                       </h4>
                       <p className="text-sm text-warmgray mt-1">
-                        Every lead on ReferralClose requires verification. Real contractors, real active budgets, phone verified instantly.
+                        Every lead on FixNear requires verification. Real contractors, real active budgets, phone verified instantly.
                       </p>
                     </div>
 
@@ -479,7 +479,7 @@ export default function LeadWizard({ onClose, onLeadSubmitted }: LeadWizardProps
                           </div>
                         )}
                         <p className="text-[10px] text-warmgray mt-1.5 leading-relaxed">
-                          By clicking "Verify phone", you authorize ReferralClose to send a standard automated confirmation PIN to your phone number. No sales spam.
+                          By clicking "Verify phone", you authorize FixNear to send a standard automated confirmation PIN to your phone number. No sales spam.
                         </p>
                       </div>
                     </div>

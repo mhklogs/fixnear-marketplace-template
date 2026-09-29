@@ -31,7 +31,7 @@ const vite = spawn('npx', ['vite', '--port=3000', '--host=0.0.0.0'], {
 });
 
 setTimeout(() => {
-  console.log('\n\x1b[32m🚀 ReferralClose is live on your network!\x1b[0m');
+  console.log('\n\x1b[32m🚀 FixNear is live on your network!\x1b[0m');
   console.log(`- \x1b[1mLocal:\x1b[0m            http://localhost:3000`);
   if (localIPs.length > 0) {
     localIPs.forEach(ip => {
